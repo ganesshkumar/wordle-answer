@@ -6,7 +6,7 @@ import { getWords } from '../data/wordlist'
 const getIndexForDay = (dayOffset: number = 0) => {
   const msInADay = 24 * 60 * 60 * 1000
   const targetDay = Date.now() + (dayOffset * msInADay)
-  const firstDay = new Date("2021-06-19 00:00:00").getTime()
+  const firstDay = new Date("2021-06-21 00:00:00").getTime()
   return Math.floor((targetDay - firstDay) / msInADay)
 }
 
